@@ -1,0 +1,11 @@
+header {
+    @include sectionCommonStyles;
+
+    .header__description {
+        color: $headerSecondlyColor;
+    }
+
+    .header__title {
+        color: $headerMainColor;
+    }
+}

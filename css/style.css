@@ -1,0 +1,12 @@
+header {
+  text-transform: uppercase;
+}
+
+header .header__description {
+  color: "#898f8f";
+}
+
+header .header__title {
+  color: "ffcc00";
+}
+/*# sourceMappingURL=style.css.map */
