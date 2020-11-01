@@ -1,6 +1,6 @@
-@mixin sectionCommonStyles {
+@mixin sectionCommonStyles($flexDirection) {
     display: flex;
-    flex-direction: column;
+    flex-direction: $flexDirection;
     align-items: center;
     text-transform: uppercase;
 }
