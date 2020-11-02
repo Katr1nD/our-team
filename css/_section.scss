@@ -43,6 +43,10 @@
             list-style: none;
         }
 
+        a {
+            text-decoration: none;
+        }
+
         .fab {
             @include sectionCommonStyles(row);
 

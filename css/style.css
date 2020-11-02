@@ -57,6 +57,10 @@ header .header__decor .line-horizontal {
   width: 210px;
 }
 
+header .header__decor img {
+  size: 5rem;
+}
+
 .character {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -126,6 +130,10 @@ header .header__decor .line-horizontal {
           align-items: center;
   text-align: center;
   list-style: none;
+}
+
+.character .character__info a {
+  text-decoration: none;
 }
 
 .character .character__info .fab {
