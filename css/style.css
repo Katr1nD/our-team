@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@400;500;600;700;900&family=Roboto&display=swap");
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -20,10 +20,41 @@ header {
 header .header__description {
   font-family: "Raleway";
   color: #898f8f;
+  font-size: 18px;
+  margin: 0;
 }
 
 header .header__title {
+  font-family: "Roboto", serif;
   color: #ffcc00;
+  font-size: 60px;
+  font-weight: 900;
+  margin: 0;
+}
+
+header .header__decor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 40px auto;
+}
+
+header .header__decor .line-horizontal {
+  background-color: #ffcc00;
+  border: none;
+  height: 1px;
+  width: 210px;
 }
 
 .character {
@@ -41,7 +72,6 @@ header .header__title {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  text-transform: uppercase;
   color: #666666;
   font-weight: 400;
 }
@@ -52,30 +82,35 @@ header .header__title {
   height: 400px;
 }
 
+.character .character__photo img {
+  border: 1px solid #ffcc00;
+}
+
 .character .character__line {
   border-left: 1px solid #ffcc00;
   height: 560px;
 }
 
-.character .character__info_name {
-  font-family: "Roboto - Black";
+.character .character__info .character__info_name {
+  font-family: "Roboto";
   font-size: 36px;
+  font-weight: 900;
   letter-spacing: 0.72px;
 }
 
-.character .character__line_hr {
+.character .character__info .character__line_hr {
   background-color: #ffcc00;
   border: none;
   height: 1px;
   width: 100px;
 }
 
-.character .character__info_position {
+.character .character__info .character__info_position {
   font-family: "Raleway";
   font-size: 24px;
 }
 
-.character .character__info_networks {
+.character .character__info .character__info_networks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,26 +125,42 @@ header .header__title {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  text-transform: uppercase;
   list-style: none;
 }
 
-.character .linkedin {
-  color: #ccccccc;
-  border: 1px solid #ccccccc;
+.character .character__info .fab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #cccccc;
+  border: 2px solid #cccccc;
   border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  text-decoration: none;
 }
 
-.character .character__info_description {
+.character .character__info .character__info_description {
   color: #333333;
   font-family: "Raleway";
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
-  text-transform: none;
 }
 
-.character .character__info_button {
+.character .character__info .character__info_button {
   border: 1px solid #ffcc00;
   color: #666666;
   font-family: "Open Sans";
@@ -117,6 +168,7 @@ header .header__title {
   font-weight: 400;
   width: 120px;
   height: 24px;
+  background-color: transparent;
   text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */

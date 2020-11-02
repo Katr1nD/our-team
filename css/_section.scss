@@ -10,57 +10,69 @@
         height: 400px;
     }
 
+    .character__photo img {
+        border: 1px solid $headerMainColor;
+    }
+
     .character__line {
         border-left: 1px solid $headerMainColor;
         height: 560px;
     }
 
-    .character__info_name {
-        font-family: $secondlyFont;
-        font-size: 36px;
-        letter-spacing: 0.72px;
-    }
+    .character__info {
 
-    .character__line_hr {
-        @include lineHorizontal;
+        .character__info_name {
+            font-family: $secondlyFont;
+            font-size: 36px;
+            font-weight: 900;
+            letter-spacing: 0.72px;
+        }
 
-        width: 100px;
-    }
+        .character__line_hr {
+            @include lineHorizontal(100px);
+        }
 
-    .character__info_position {
-        font-family: $mainFont;
-        font-size: 24px;
-    }
+        .character__info_position {
+            font-family: $mainFont;
+            font-size: 24px;
+        }
 
-    .character__info_networks {
-        @include sectionCommonStyles(row);
+        .character__info_networks {
+            @include sectionCommonStyles(row);
 
-        list-style: none;
-    }
+            list-style: none;
+        }
 
-    .linkedin {
-        color: $listColor;
-        border: 1px solid $listColor;
-        border-radius: 50%;
-    }
+        .fab {
+            @include sectionCommonStyles(row);
 
-    .character__info_description {
-        color: $sectionSecondlyColor;
-        font-family: $mainFont;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 24px;
-        text-transform: none;
-    }
+            color: $listColor;
+            border: 2px solid $listColor;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            margin-right: 5px;
+            text-decoration: none;
+        }
 
-    .character__info_button {
-        border: 1px solid $headerMainColor;
-        color: $sectionMainColor;
-        font-family: $buttonFont;
-        font-size: 14px;
-        font-weight: 400;
-        width: 120px;
-        height: 24px;
-        text-transform: uppercase;
+        .character__info_description {
+            color: $sectionSecondlyColor;
+            font-family: $mainFont;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 24px;
+        }
+
+        .character__info_button {
+            border: 1px solid $headerMainColor;
+            color: $sectionMainColor;
+            font-family: $buttonFont;
+            font-size: 14px;
+            font-weight: 400;
+            width: 120px;
+            height: 24px;
+            background-color: transparent;
+            text-transform: uppercase;
+        }
     }
 }

@@ -1,14 +1,31 @@
 header {
     @include sectionCommonStyles(column);
 
+    text-transform: uppercase;
+
     .header__description {
         font-family: $mainFont;
         color: $headerSecondlyColor;
+        font-size: 18px;
+        margin: 0;
     }
 
     .header__title {
+        font-family: $secondlyFont, serif;
         color: $headerMainColor;
+        font-size: 60px;
+        font-weight: 900;
+        margin: 0;
     }
 
-    .line-horizontak
+    .header__decor {
+        @include sectionCommonStyles(row);
+
+        margin: 40px auto;
+
+        .line-horizontal {
+            @include lineHorizontal(210px);
+        }
+    }
+
 }
