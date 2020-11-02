@@ -1,6 +1,66 @@
-.character__info_networks {
+.character {
     @include sectionCommonStyles(row);
 
-    list-style: none;
+    color: $sectionMainColor;
+    font-weight: 400;
 
+    .character__photo,
+    .character__info {
+        width: 415px;
+        height: 400px;
+    }
+
+    .character__line {
+        border-left: 1px solid $headerMainColor;
+        height: 560px;
+    }
+
+    .character__info_name {
+        font-family: $secondlyFont;
+        font-size: 36px;
+        letter-spacing: 0.72px;
+    }
+
+    .character__line_hr {
+        @include lineHorizontal;
+
+        width: 100px;
+    }
+
+    .character__info_position {
+        font-family: $mainFont;
+        font-size: 24px;
+    }
+
+    .character__info_networks {
+        @include sectionCommonStyles(row);
+
+        list-style: none;
+    }
+
+    .linkedin {
+        color: $listColor;
+        border: 1px solid $listColor;
+        border-radius: 50%;
+    }
+
+    .character__info_description {
+        color: $sectionSecondlyColor;
+        font-family: $mainFont;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+        text-transform: none;
+    }
+
+    .character__info_button {
+        border: 1px solid $headerMainColor;
+        color: $sectionMainColor;
+        font-family: $buttonFont;
+        font-size: 14px;
+        font-weight: 400;
+        width: 120px;
+        height: 24px;
+        text-transform: uppercase;
+    }
 }

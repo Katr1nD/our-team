@@ -7,9 +7,13 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -22,7 +26,7 @@ header .header__title {
   color: #ffcc00;
 }
 
-.character__info_networks {
+.character {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,10 +34,89 @@ header .header__title {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #666666;
+  font-weight: 400;
+}
+
+.character .character__photo,
+.character .character__info {
+  width: 415px;
+  height: 400px;
+}
+
+.character .character__line {
+  border-left: 1px solid #ffcc00;
+  height: 560px;
+}
+
+.character .character__info_name {
+  font-family: "Roboto - Black";
+  font-size: 36px;
+  letter-spacing: 0.72px;
+}
+
+.character .character__line_hr {
+  background-color: #ffcc00;
+  border: none;
+  height: 1px;
+  width: 100px;
+}
+
+.character .character__info_position {
+  font-family: "Raleway";
+  font-size: 24px;
+}
+
+.character .character__info_networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   text-transform: uppercase;
   list-style: none;
+}
+
+.character .linkedin {
+  color: #ccccccc;
+  border: 1px solid #ccccccc;
+  border-radius: 50%;
+}
+
+.character .character__info_description {
+  color: #333333;
+  font-family: "Raleway";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.character .character__info_button {
+  border: 1px solid #ffcc00;
+  color: #666666;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  width: 120px;
+  height: 24px;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */

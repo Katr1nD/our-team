@@ -1,6 +1,14 @@
 @mixin sectionCommonStyles($flexDirection) {
     display: flex;
     flex-direction: $flexDirection;
+    justify-content: center;
     align-items: center;
+    text-align: center;
     text-transform: uppercase;
+}
+
+@mixin lineHorizontal {
+    background-color: $headerMainColor;
+    border: none;
+    height: 1px;
 }
