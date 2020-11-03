@@ -7,9 +7,9 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -40,9 +40,9 @@ header .header__decor {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -69,9 +69,9 @@ header .header__decor img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -82,12 +82,34 @@ header .header__decor img {
 
 .character .character__photo,
 .character .character__info {
-  width: 415px;
-  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 420px;
+  height: 420px;
 }
 
 .character .character__photo img {
+  margin: auto;
   border: 1px solid #ffcc00;
+}
+
+.character .character__photo {
+  background-image: linear-gradient(#ffcc00 0, #ffcc00 100px, transparent 100px, transparent 320px, #ffcc00 320px, #ffcc00 420px), linear-gradient(90deg, #ffcc00 0, #ffcc00 100px, transparent 100px, transparent 320px, #ffcc00 320px, #ffcc00 420px), linear-gradient(#ffcc00 0, #ffcc00 100px, transparent 100px, transparent 320px, #ffcc00 320px, #ffcc00 420px), linear-gradient(90deg, #ffcc00 0px, #ffcc00 100px, transparent 100px, transparent 320px, #ffcc00 320px, #ffcc00 420px);
+  background-size: 1px 420px, 420px 1px, 1px 420px, 420px 1px;
+  background-position: 0 0, 0 0, 100% 100%, 100% 100%;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 }
 
 .character .character__line {
@@ -100,6 +122,7 @@ header .header__decor img {
   font-size: 36px;
   font-weight: 900;
   letter-spacing: 0.72px;
+  margin: 30px;
 }
 
 .character .character__info .character__line_hr {
@@ -112,6 +135,7 @@ header .header__decor img {
 .character .character__info .character__info_position {
   font-family: "Raleway";
   font-size: 24px;
+  margin: 30px;
 }
 
 .character .character__info .character__info_networks {
@@ -122,14 +146,15 @@ header .header__decor img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
   list-style: none;
+  margin: 0;
 }
 
 .character .character__info a {
@@ -144,9 +169,9 @@ header .header__decor img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -166,6 +191,14 @@ header .header__decor img {
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
+  margin-top: 30px;
+}
+
+.character .character__info .border {
+  background-image: linear-gradient(to left, #ffcc00 0, #ffcc00 10px, transparent 10px, transparent 15px, #ffcc00 15px, #ffcc00 35px, transparent 35px, transparent 40px, #ffcc00 40px, #ffcc00 50px);
+  width: 50px;
+  padding-top: 4px;
+  margin-bottom: 25px;
 }
 
 .character .character__info .character__info_button {

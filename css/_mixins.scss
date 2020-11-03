@@ -1,7 +1,7 @@
 @mixin sectionCommonStyles($flexDirection) {
     display: flex;
     flex-direction: $flexDirection;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
     // text-transform: uppercase;
