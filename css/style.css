@@ -161,6 +161,10 @@ header .header__decor img {
   text-decoration: none;
 }
 
+.character .character__info ul {
+  padding: 0;
+}
+
 .character .character__info .fab {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -183,6 +187,11 @@ header .header__decor img {
   height: 30px;
   margin-right: 5px;
   text-decoration: none;
+}
+
+.character .character__info .fab:hover {
+  color: #ffcc00;
+  border: 2px solid #ffcc00;
 }
 
 .character .character__info .character__info_description {
@@ -211,5 +220,11 @@ header .header__decor img {
   height: 24px;
   background-color: transparent;
   text-transform: uppercase;
+}
+
+.character .character__info .character__info_button:hover {
+  background-color: #ffcc00;
+  -webkit-box-shadow: 0px 0px 5px 1px #666666;
+          box-shadow: 0px 0px 5px 1px #666666;
 }
 /*# sourceMappingURL=style.css.map */

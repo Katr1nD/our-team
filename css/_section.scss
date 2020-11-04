@@ -63,6 +63,10 @@
             text-decoration: none;
         }
 
+        ul {
+            padding: 0;
+        }
+
         .fab {
             @include sectionCommonStyles(row);
 
@@ -73,6 +77,11 @@
             height: 30px;
             margin-right: 5px;
             text-decoration: none;
+        }
+
+        .fab:hover {
+            color: $headerMainColor;
+            border: 2px solid $headerMainColor;
         }
 
         .character__info_description {
@@ -103,5 +112,11 @@
             background-color: transparent;
             text-transform: uppercase;
         }
+
+        .character__info_button:hover {
+            background-color: $headerMainColor;
+            box-shadow: 0px 0px 5px 1px $sectionMainColor;
+        }
+
     }
 }
